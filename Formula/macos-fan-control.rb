@@ -26,7 +26,7 @@ class MacosFanControl < Formula
   end
 
   test do
-    assert_match "fan-control 0.4.0", shell_output("#{bin}/fan-control --version")
+    assert_match "fan-control #{version}", shell_output("#{bin}/fan-control --version")
     assert_match "self-test: OK", shell_output("#{bin}/fan-control --self-test")
   end
 end
