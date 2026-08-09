@@ -5,6 +5,7 @@ class MacosFanControl < Formula
   sha256 "334c57a77129b22454f9f404494a6d505fac6c9e6aeff034888a787523e0f54d"
   license "MIT"
 
+  depends_on arch: :arm64
   depends_on "macmon"
   depends_on macos: :ventura
 
