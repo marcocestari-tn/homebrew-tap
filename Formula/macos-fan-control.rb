@@ -1,14 +1,9 @@
 class MacosFanControl < Formula
   desc "Experimental Apple Silicon fan controller for macOS"
   homepage "https://github.com/marcocestari-tn/macos-fan-control"
-  url "https://github.com/marcocestari-tn/macos-fan-control/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "96d748233497bc0b824e53d1aea9cf8913eff2d84bde8a70dc4c4f6d611c2d79"
+  url "https://github.com/marcocestari-tn/macos-fan-control/archive/refs/tags/v0.4.1.tar.gz"
+  sha256 "9469bfe60007bc47f08a0b9c4b7ef82708a487434162d5014bc5b53cf12bf35c"
   license "MIT"
-
-  bottle do
-    root_url "https://github.com/marcocestari-tn/homebrew-tap/releases/download/macos-fan-control-0.4.0"
-    sha256 arm64_tahoe: "bc1fa8feae8a8d341034c64aea5784b40baa37e1ac3b49b6d97f6e99d18e7fa1"
-  end
 
   depends_on arch: :arm64
   depends_on "macmon"
