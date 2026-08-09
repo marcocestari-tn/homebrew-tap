@@ -1,14 +1,10 @@
 class MacosFanControl < Formula
   desc "Experimental Apple Silicon fan controller for macOS"
   homepage "https://github.com/marcocestari-tn/macos-fan-control"
-  url "https://github.com/marcocestari-tn/macos-fan-control/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "4d2761ad90cabe83fe7c075f71755f5e4752731c7e800846d211f51e9f85b367"
+  url "https://github.com/marcocestari-tn/macos-fan-control/archive/refs/tags/v0.3.2.tar.gz"
+  sha256 "da4f2333896ac8775f156a7f90dbe39e426307a3cb364a6bd951012c41b9a3b6"
   license "MIT"
 
-  bottle do
-    root_url "https://github.com/marcocestari-tn/homebrew-tap/releases/download/macos-fan-control-0.3.1"
-    sha256 arm64_tahoe: "dfb64ced7b4b3d5a49ed3c31b523a9f879dc7aa599d014e5ac23b0544fa5d2d8"
-  end
 
   depends_on arch: :arm64
   depends_on "macmon"
@@ -31,7 +27,7 @@ class MacosFanControl < Formula
   end
 
   test do
-    assert_match "fan-control 0.3.1", shell_output("#{bin}/fan-control --version")
+    assert_match "fan-control 0.3.2", shell_output("#{bin}/fan-control --version")
     assert_match "self-test: OK", shell_output("#{bin}/fan-control --self-test")
   end
 end
