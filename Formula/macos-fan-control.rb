@@ -5,6 +5,11 @@ class MacosFanControl < Formula
   sha256 "1ac25674ea2b8a7bc924985c93e6fec7fd8aee0740c2544a1bd27aeee85f7f40"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/marcocestari-tn/homebrew-tap/releases/download/macos-fan-control-0.4.2"
+    sha256 arm64_tahoe: "b5a8b5f210b37f717070a7a5f9f69594f81455d9ea9eceeb7517f68835d522ba"
+  end
+
   depends_on arch: :arm64
   depends_on "macmon"
   depends_on macos: :ventura
